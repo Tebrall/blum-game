@@ -1,0 +1,93 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./images/BackroundMenu.jpg') no-repeat center center fixed;
+  background-size: cover;
+  border: 10px solid #3e2723;
+}
+
+.menu-title {
+  font-family: 'Uncial Antiqua', serif;
+  color: #ffdf80;
+  text-shadow: 2px 2px 8px #000;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-family: 'Uncial Antiqua', serif;
+  color: #301b0d;
+  background: linear-gradient(to bottom, #e6c26b, #b2883b);
+  border: 2px solid #8b5a2b;
+  border-radius: 12px;
+  text-shadow: 1px 1px 5px #000000;
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.5), inset 4px 4px 8px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  text-transform: uppercase;
+}
+
+.menu-button:hover {
+  transform: translateY(-5px);
+  box-shadow: -6px -6px 12px #5e5e5e, 6px 6px 12px black;
+  background: linear-gradient(to bottom, #f1d382, #b2883b);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff9e6;
+  color: #301b0d;
+  border: 5px solid #8b5a2b;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content p {
+  font-family: 'Garamond', serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Uncial Antiqua', serif;
+  background: linear-gradient(to bottom, #e6c26b, #b2883b);
+  color: #301b0d;
+  border: 2px solid #8b5a2b;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.close-button:hover {
+  transform: translateY(-2px);
+  box-shadow: -4px -4px 8px #5e5e5e, 4px 4px 8px black;
+  background: linear-gradient(to bottom, #f1d382, #b2883b);
+}
