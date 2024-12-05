@@ -1,10 +1,17 @@
 .game-container {
   text-align: center;
-  margin: 20px;
   font-family: 'Uncial Antiqua', serif;
   color: #ffdf80;
   text-shadow: 2px 2px 8px #000;
   transition: background-color 0.3s ease;
+  background: url('./images/ashenvale-wow.1920x1080_002.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
 .game-container.damage {
@@ -19,7 +26,8 @@
   border: 5px solid #8b5a2b;
   margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(to bottom, #4e342e, #3e2723);
+  background: url('./images/GameBackground.jpg') no-repeat center center;
+  background-size: cover;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
   border-radius: 12px;
 }
